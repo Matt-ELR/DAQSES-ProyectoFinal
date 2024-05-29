@@ -1,0 +1,199 @@
+/* Responsive design */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Make text bigger on small screen sizes */
+  @media screen and (max-width: 768px) {
+    /* Header text */
+    .logo-title {
+      font-size: 30px;
+    }
+    
+    /* Sub-header text */
+    .sub-header li a {
+      font-size: 18px;
+    }
+    
+    /* Main content text */
+    main {
+      font-size: 18px;
+    }
+    
+    /* Footer text */
+    footer p {
+      font-size: 16px;
+    }
+  }
+  
+  @media screen and (max-width: 500px) {
+    /* Header text */
+    .logo-title {
+      font-size: 36px;
+    }
+    
+    /* Sub-header text */
+    .sub-header li a {
+      font-size: 20px;
+    }
+    
+    /* Main content text */
+    main {
+      font-size: 20px;
+    }
+    
+    /* Footer text */
+    footer p {
+      font-size: 18px;
+    }
+  }
+  
+  @media screen and (max-width: 320px) {
+    /* Header text */
+    .logo-title {
+      font-size: 42px;
+    }
+    
+    /* Sub-header text */
+    .sub-header li a {
+      font-size: 22px;
+    }
+    
+    /* Main content text */
+    main {
+      font-size: 22px;
+    }
+    
+    /* Footer text */
+    footer p {
+      font-size: 20px;
+    }
+  }
+  
+  /* Header styles */
+  .header {
+    overflow: hidden;
+    background-color: #f7f7f7; /* light gray background */
+    padding: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 10px;
+    padding: calc(20px + 1vw) calc(10px + 1vw);
+  }
+  
+  .logo {
+    width: 6.5em; /* adjust the width to your logo size */
+    height: 6.5em; /* adjust the height to your logo size */
+    margin: 0;
+    cursor: pointer;
+  }
+  
+  .logo-title {
+    font-size: 25px;
+    font-weight: bold;
+    vertical-align: middle;
+    color: black; /* main color */
+    text-decoration: none;
+    display: inline-block; /* make the title an inline block element */
+    vertical-align: middle; /* vertically align the title with the logo */
+  }
+  
+  /* Sub-header styles */
+.sub-header {
+    background-color: #016A6D; /* main color */
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .sub-header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .sub-header li {
+    margin-right: 20px;
+  }
+  
+  /* Sub-header styles for small screen sizes */
+  @media screen and (max-width: 500px) {
+    .sub-header {
+      position: relative;
+    }
+    
+    .sub-header ul {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: #016A6D; /* main color */
+      display: none;
+      flex-direction: column;
+    }
+    
+    .sub-header li {
+      margin: 0;
+    }
+    
+    .sub-header.active ul {
+      display: flex;
+    }
+    
+    .sub-header li a {
+      padding: 10px;
+    }
+    
+    .sub-header-toggle {
+      display: block;
+      color: #fff;
+      text-decoration: none;
+      padding: 10px;
+      cursor: pointer;
+    }
+  }
+  
+  .animated-link {
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  
+  .animated-link:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background-color: #fff; /* main color */
+    transition: width 0.3s ease;
+  }
+
+  .animated-link:hover:before {
+    width: 100%;
+  }
+  
+  /* Main content styles */
+  main {
+    font-size: 20px;
+    padding: 20px;
+    text-align: justify;
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #016A6D; /* main color */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer p {
+    font-size: 18px;
+    margin: 0;
+  }

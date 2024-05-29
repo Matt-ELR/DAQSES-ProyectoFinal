@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Nombre del documento</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="header">
+    <img src="Images/Logo_Positivo.png" alt="Logo" class="logo" onclick="location.href='index.html'">
+    <a href="index.html" class="logo-title">Colchoneria "Dylan's Comfort" <br> <span>Parte del multigrupo "Dylan's House"</span></a>
+  </div>
+  
+  <div class="sub-header">
+    <input type="checkbox" id="sub-header-toggle">
+    <label for="sub-header-toggle" class="sub-header-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <ul>
+      <li><a href="index.html" class="animated-link">Inicio</a></li>
+      <li><a href="principal.html" class="animated-link">Productos</a></li>
+      <li><a href="contacto.html" class="animated-link">Acerca de nosotros</a></li>
+      <li><a href="reseñas.php" class="animated-link">Reseñas de otros clientes</a></li>
+    </ul>
+  </div>
+  
+  <main>
+    <h2 class="s33">Conozca a nuestro equipo:</h2>
+<div class="team-member">
+  <img src="Images/JorgePic.jpg" height="360" alt="Jorge Eduardo Martinez Moreno">
+  <h3>Jorge Eduardo Martinez Moreno</h3>
+  <p>Ingeniero Jefe</p>
+  <p>El encargado de desarollar los compuestos usados en nuestros colchones <br> los mismos que les dan su caracteristica comodidad</p>
+</div>
+<div class="team-member">
+  <img src="Images/MattPic.jpg" height="360" alt="Mattias Emile Lelis Ramirez">
+  <h3>Mattias Emile Lelis Ramirez</h3>
+  <p>Jefe de logistica</p>
+  <p>El encargado de hacer que los colchones lleguen hasta usted <br> en el menor tiempo posible y en las mejores condiciones</p>
+</div>
+<div class="team-member">
+  <img src="Images/Dylan_Sabro.jpg" height="360" id="i1" alt="Dylon Yael Espinoza Corona">
+  <h3>Dylon Yael Espinoza Corona</h3>
+  <p>Jefe probador de colchones y control de calidad</p>
+  <p>El experto en colchones que determina la calificacion de cada colchon <br> Asi como hacer control de calidad en nuestra fabrica</p>
+  <script type="text/JavaScript">
+    var m1 = document.getElementById('i1');
+    m1.ondblclick=function(){m1.src='images/noshit.jpg';};
+    m1.onclick=function(){m1.src='images/Dylan_Sabro.jpg';};
+  </script>
+</div>
+  </main>
+  
+  <footer>
+    <p>&copy; 2024 Dylan's House</p>
+    <button class="back-to-top" onclick="window.scrollTo(0, 0)">Inicio de pagina</button>
+  </footer>
+</body>
+</html>
