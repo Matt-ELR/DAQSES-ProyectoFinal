@@ -1,4 +1,4 @@
 <?php
 #                   Ruta       User  pwd  BD
 $con = new mysqli('localhost','root','','colchoneria');
-/*ejemplo2*/
+/*Prueba de overpose/
