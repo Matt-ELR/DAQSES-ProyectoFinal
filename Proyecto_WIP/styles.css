@@ -291,6 +291,9 @@ footer p {
   border-color: black;
   border-width: 3px;
 }
+.notextdeco li{
+list-style: none;
+}
 #col1{
   background-color: rgb(240, 248, 255);
 }
