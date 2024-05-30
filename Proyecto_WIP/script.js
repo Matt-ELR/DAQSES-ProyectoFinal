@@ -9,3 +9,14 @@ backToTopButton.addEventListener('click', () => {
 });
 
 /*Test de cambios de JS*/
+
+const subHeader = document.querySelector('.sub-header');
+const scrollThreshold = 200; // adjust this value to your liking
+  
+window.addEventListener('scroll', () => {
+if (window.scrollY > scrollThreshold) {
+  subHeader.classList.add('fixed');
+} else {
+  subHeader.classList.remove('fixed');
+  }
+});

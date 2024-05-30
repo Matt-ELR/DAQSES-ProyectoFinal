@@ -517,13 +517,3 @@ form input[type="text"], form input[type="email"], form textarea {
 form input[type="submit"], form input[type="reset"] {
   margin-top: 10px;
 }
-
-.sub-header.fixed {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000; /* make sure it's on top of other elements */
-  background-color: #016A6D; /* main color */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* add a shadow to make it stand out */
-}
