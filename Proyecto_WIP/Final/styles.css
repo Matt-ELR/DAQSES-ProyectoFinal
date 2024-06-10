@@ -557,3 +557,76 @@ form input[type="submit"], form input[type="reset"] {
 .privacy-policy:hover {
   color: #ddd;
 }
+
+.publicity-boxes {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+/* Publicity boxes */
+.publicity-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.publicity-box {
+  height: 300px;
+  background-color: rgba(1, 106, 109,0.1);
+  border: 1px solid #016A6D;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.publicity-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.publicity-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(251, 253, 111);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+.publicity-text h2 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+.publicity-text p {
+  font-size: 1.2em;
+  margin: 0;
+}
+
+.publicity-box.main {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.publicity-box.left,
+.publicity-box.right {
+  width: 48%;
+}
+
+.publicity-box.left {
+  margin-right: 2%;
+}
+
+.publicity-box.right {
+  margin-left: 2%;
+}
